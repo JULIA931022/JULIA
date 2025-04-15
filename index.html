@@ -1,124 +1,82 @@
 <!DOCTYPE html>
-<html lang="zh">
-
+<html lang="zh-Hant">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>明星演唱會搶票網</title>
-  <meta name="description" content="最新、最快的演唱會搶票平台，讓你不錯過任何偶像演出！">
-  <meta name="keywords" content="演唱會, 搶票, 偶像, 歌手, 音樂, 票務">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>桃園旅遊景點導覽</title>
   <style>
-    .hero-section {
-      background: url('assets/img/concert-bg.jpg') center/cover no-repeat;
-      height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 20px;
+      padding: 0;
+    }
+    h1 {
       text-align: center;
-      position: relative;
+      color: #2c3e50;
     }
-    .hero-section::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
     }
-    .hero-section div {
-      position: relative;
-      z-index: 1;
-    }
-    .hero-section h1 {
-      font-size: 3rem;
-      font-weight: bold;
-      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    }
-    .gallery img {
-      width: 100%;
-      height: auto;
+    .spot {
+      background-color: #ffffff;
       border-radius: 10px;
-      margin-bottom: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 15px;
+      text-align: center;
     }
-    .swiper-container {
+    .spot img {
       width: 100%;
-      height: 400px;
-    }
-    .swiper-slide img {
-      width: 100%;
-      height: 100%;
+      height: 200px;
       object-fit: cover;
+      border-radius: 8px;
+    }
+    .spot h2 {
+      color: #2980b9;
+      margin: 10px 0 5px;
+    }
+    .spot p {
+      color: #555;
+      font-size: 15px;
+    }
+    .spot a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #27ae60;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
+<body>
 
-<body class="index-page">
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">明星演唱會搶票網</h1>
-      </a>
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">首頁</a></li>
-          <li><a href="#about">關於我們</a></li>
-          <li><a href="#services">票務服務</a></li>
-          <li><a href="#portfolio">演出資訊</a></li>
-          <li><a href="#team">明星陣容</a></li>
-          <li><a href="#contact">聯絡我們</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+  <h1>桃園旅遊景點導覽</h1>
+
+  <div class="container">
+    <div class="spot">
+      <img src="sun-moon-lake.jpg" alt="日月潭">
+      <h2>日月潭</h2>
+      <p>日月潭是台灣最大的天然湖泊，以湖光山色與邵族文化聞名，是熱門的觀光勝地。</p>
+      <a href="https://goo.gl/maps/ZhcmNnt9fYcQuxpXA" target="_blank">查看地圖</a>
     </div>
-  </header>
 
-  <section class="hero-section">
-    <div>
-      <h1>即刻搶票，見證你的偶像！</h1>
-      <p>最新、最快的演唱會票務資訊</p>
-      <a href="#services" class="btn btn-primary btn-lg">查看演出</a>
+    <div class="spot">
+      <img src="jiufen.jpg" alt="九份老街">
+      <h2>九份老街</h2>
+      <p>九份老街充滿懷舊氛圍，以階梯街道、小吃與茶屋聞名，曾為金礦繁榮之地。</p>
+      <a href="https://goo.gl/maps/CkL96dPRg8MZQ1R99" target="_blank">查看地圖</a>
     </div>
-  </section>
 
-  <section class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="assets/img/concert1.jpg" alt="演唱會現場"></div>
-      <div class="swiper-slide"><img src="assets/img/concert2.jpg" alt="舞台特效"></div>
-      <div class="swiper-slide"><img src="assets/img/concert3.jpg" alt="粉絲應援"></div>
+    <div class="spot">
+      <img src="alishan.jpg" alt="阿里山">
+      <h2>阿里山</h2>
+      <p>阿里山擁有壯麗的雲海與森林鐵道，是台灣最具代表性的高山旅遊景點之一。</p>
+      <a href="https://goo.gl/maps/t5w7gN1zLtgoX2Ro8" target="_blank">查看地圖</a>
     </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </section>
+  </div>
 
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      loop: true,
-      pagination: { el: '.swiper-pagination', clickable: true },
-      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-    });
-  </script>
 </body>
 </html>
